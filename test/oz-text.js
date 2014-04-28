@@ -1,8 +1,11 @@
 
 var Oz = require('oz');
+var textTag = require('oz-text');
 var assert = require('assert');
 var text = require('text');
 var children = require('children');
+
+Oz.use(textTag);
 
 describe('Rendering', function(){
   it('should set text values', function(){
