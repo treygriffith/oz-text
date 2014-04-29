@@ -19,12 +19,8 @@ module.exports.render = render;
  * output: <div oz-text="person.name">Tobi</div>
  */
 
-function render (el, ctx, prop, scope, next) {
-
-  var val = this.get(ctx, prop) || '';
+function render (el, val) {
 
   if(val !== undefined) text(el, String(val));
-
-  next();
 }
 
